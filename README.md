@@ -26,7 +26,7 @@ Precisamos falar sobre mulheres que mudaram o mundo!
 - Adicione uma pasta com seu-nome dentro da pasta `perfil-maravilhosa`, ex: _cintia-fumi_
 - Dentro da pasta com seu-nome, crie um arquivo html com o nome da personalidade, ex: _ada-lovelace.html_
 - Dentro da sua pasta, crie também as pastas de imagens, css e js
-- Praticar HTML, CSS, responsividade (_mobile first_), efeitos com JS, JQuery, Bootstrap
+- Praticar HTML, CSS (com ou sem Bootstrap), responsividade, efeitos com JS ou JQuery
 
 ### Instalação de extensões no VSCode
 
