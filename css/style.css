@@ -436,7 +436,7 @@ li {
     padding: 4rem;
   }
   .secao-autora__about {
-    width: 400px;
+    max-width: 400px;
     flex-direction: row;
     text-align: left;
     align-items: center;
