@@ -231,7 +231,7 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  max-width: 400px;
   border-radius: 5px;
 }
 
