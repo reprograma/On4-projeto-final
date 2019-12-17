@@ -191,7 +191,7 @@ li {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* --- PEFIL DIVA--- */
+/* --- PERFIL DIVA--- */
 .secao-diva {
   display: flex;
   flex-direction: column;
@@ -249,12 +249,51 @@ li {
   transform: scale(1.1);
 }
 
+
 .secao-diva__historia {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
 }
+
+/* ---LEGADO---  */
+.row {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+  height: 50%;
+}
+
+/* --SABER MAIS SOBRE--  */
+
+.secao-diva__videos {
+  position: relative;
+  width: 260px;
+  padding-bottom: 40.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  display: flex;
+}
+
+.secao-diva__videos iframe,
+.secao-diva__videos object,
+.secao-diva__videos embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.alinhar-videos {
+  display: flex;
+}
+
+
+
+
 
 /* --- AUTORA --- */
 .secao-autora {
@@ -364,6 +403,14 @@ li {
 }
 /*** MEDIA QUERIES ***/
 /* TABLET */
+
+@media (min-width: 200px) {
+  .secao-diva__foto-perfil {
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   /* --- NAV --- */
   .navegacao__itens {
@@ -431,6 +478,11 @@ li {
   .maravilhosas__perfil p {
     font-size: 1.5rem;
     margin-top: 1rem;
+  }
+
+  .secao-diva__foto-perfil {
+    align-items: center;
+    max-width: 100%;
   }
 
   /* --- FOOTER --- */
@@ -508,4 +560,20 @@ li {
     max-width: 200px;
     max-height: 200px;
   }
+}
+
+/* GRID */
+@media (max-width: 768px) {
+.row {
+  display: inline-block
+}
+
+.col {
+  width: 100%
+}
+
+
+.alinhar-videos {
+  display: inline-block
+}
 }
