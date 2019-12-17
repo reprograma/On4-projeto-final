@@ -246,6 +246,7 @@ li {
 }
 
 .secao-diva__historia {
+  text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: center;
