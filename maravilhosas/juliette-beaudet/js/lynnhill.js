@@ -1,12 +1,3 @@
-const autoraBtn = document.querySelector('.arrow')
-autoraBtn.addEventListener('click', function(e){
-e.preventDefault()
-autoraBtn.classList.toggle('arrow-close')
-
-const autoraInfo = document.querySelector('.secao-autora__about')
-autoraInfo.classList.toggle('closed');
-})
-
 (function() {
   var menuResponsivo = document.getElementById("menuResponsivo");
   var btnResponsivo = document.getElementById("btnResponsivo");
@@ -24,12 +15,21 @@ autoraInfo.classList.toggle('closed');
 
 window.addEventListener("scroll", function() {
   if (pageYOffset >= 250) {
-    document.querySelector(".navegacao").style.backgroundColor = "#CC9933";
+    document.querySelector(".navegacao").style.backgroundColor = "#B8860B";
     document.querySelector(".navegacao__itens").style.backgroundColor =
-      "#CC9933";
+      "#B8860B";
   } else {
     document.querySelector(".navegacao").style.backgroundColor = "transparent";
     document.querySelector(".navegacao__itens").style.backgroundColor =
       "transparent";
   }
 });
+
+const autoraBtn = document.querySelector('.arrow')
+autoraBtn.addEventListener('click', function(e){
+e.preventDefault()
+autoraBtn.classList.toggle('arrow-close')
+
+const autoraInfo = document.querySelector('.secao-autora__about')
+autoraInfo.classList.toggle('closed');
+})
