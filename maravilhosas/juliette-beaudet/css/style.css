@@ -26,6 +26,10 @@ a {
   color: inherit;
 }
 
+p {
+  text-align: justify;
+}
+
 ul {
   padding: 0;
 }
@@ -291,6 +295,10 @@ li {
   display: flex;
 }
 
+.naomorder {
+  display: block
+}
+
 
 
 
@@ -439,6 +447,10 @@ li {
 
   .navegacao__menu-hamburguer {
     display: none;
+  }
+
+  .secao-diva__videos {
+    width: 560px;
   }
 
   /* --- HEADER --- */
