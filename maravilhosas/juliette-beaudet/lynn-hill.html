@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
     rel="stylesheet" />
-  <link rel="stylesheet" href="../../css/navbar.css" />
-  <link rel="stylesheet" href="../../css/footer.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -24,7 +22,7 @@
         <div class="navegacao__nav">
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="../../index.html">Home</a>
             </li>
             <li>
               <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
@@ -33,22 +31,22 @@
         </div>
         <div class="navegacao__redes-sociais">
           <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
-            <img src="../../img/icon-facebook.png" alt="Ícone do Facebook" />
+            <img class="imglogos" src="img/icon-facebook.png" alt="Ícone do Facebook" />
           </a>
           <a href="https://twitter.com/ReprogramaBr" target="_blank">
-            <img src="../../img/icon-twitter.png" alt="Ícone do Twitter" />
+            <img class="imglogos" src="img/icon-twitter.png" alt="Ícone do Twitter" />
           </a>
           <a href="https://www.instagram.com/reprogramabr/" target="_blank">
-            <img src="../../img/icon-instagram.png" alt="Ícone do Instagram" />
+            <img class="imglogos" src="img/icon-instagram.png" alt="Ícone do Instagram" />
           </a>
           <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank">
-            <img src="../../img/icon-linkedin.png" alt="Ícone do LinkedIn" />
+            <img class="imglogos" src="img/icon-linkedin.png" alt="Ícone do LinkedIn" />
           </a>
         </div>
       </div>
       <div class="navegacao__menu-hamburguer" id="btnResponsivo">
         <a href="#">
-          <img src="../../img/menu-nav.png" alt="Menu de navegação" />
+          <img src="img/menu-nav.png" alt="Menu de navegação" />
         </a>
       </div>
     </div>
@@ -93,15 +91,20 @@
         <div>
           <p>Lynn Hill nasceu em 1961 em Detroit, Michigan. Escaladora profissional vencedora de várias competições
             nacionais e internacionais, aperfeiçoou a técnica morando na Europa e viajando o mundo. Nos EEUU, se
-            destacou como a única mulher fazendo parte da vanguarda da escalada no Yosemite, Parque hoje reconhecido
-            como a Meca do esporte. As suas performances nos anos 1980 e 1990 puxaram para cima a percepção do possível
-            para atletas mulheres. Nomeadamente, se tornou em 1991 a primeira mulher do mundo a fechar uma via de nível
-            5.14. </p>
+            destacou como a única mulher fazendo parte da vanguarda da escalada no Yosemite, parque hoje reconhecido
+            como a Meca do esporte. As suas performances entre os anos 1980 e 2010 puxaram para cima a percepção do possível
+            para atletas mulheres. Nomeadamente, se tornou em 1990 a primeira mulher do mundo a fechar uma via de nível
+            5.14. Hoje, com 58 anos, segue escalando e ensinando.</p>
         </div>
 
         <div class="secao-diva__foto-grande">
           <img class="img-responsive" src="../juliette-beaudet/img/lynnhill-grande.jpg" alt="Foto grande Lynn" />
         </div>
+
+
+
+
+
       </article>
 
       <article class="secao-diva__citacao">
@@ -116,17 +119,16 @@
       <article class="secao-diva__historia">
         <h3 class="secao-diva__titulo secao-diva__titulo_esq">Legado da Lynn Hill</h3>
 
-        <div class="container">
+        <div class="container-fluid">
 
           <div class="row">
             <div class="col">
-              <p><b>O Nariz</b> <br>O universo da escalada, reconhecidamente um ambiente masculino, testemunhou em 1993
+              <p class= "secao-diva__pnariz"><b>O Nariz </b> <br>O universo da escalada, reconhecidamente um ambiente masculino, testemunhou em 1993
                 uma mulher
                 estabelecer um marco histórico no esporte, quando a Lynn Hill e o parceiro Brooke
-                Sandahl escalaram a via The Nose da montanha emblemática El Capitan em estilo livre, uma conquista
+                Sandahl realizaram a primeira ascenção em estilo livre da via The Nose da montanha emblemática El Capitan, uma conquista
                 considerada impossível. </p>
             </div>
-
 
             <div class="col">
               <img class="img-responsive" src="../juliette-beaudet/img/thenose.jpg" alt="Foto Yosemite" />
@@ -139,7 +141,7 @@
             </div>
 
             <div class="col">
-              <p><b>Escaladoras hoje</b> <br> Atualmente, cada vez mais mulheres encarnam a visão da Lynn e superam as
+              <p class= "secao-diva__pescaladoras"><b>Escaladoras hoje</b> <br> Atualmente, cada vez mais mulheres encarnam a visão da Lynn e superam as
                 barreiras do esporte. Em fevereiro de 2017, Margo Hayes, originária de Boulder no Colorado onde a Lynn
                 atua como treinadora, mandou o primeiro 5.15 feminino,
                 cadenando a via espanhola La Rambla.</p>
@@ -150,35 +152,27 @@
     </section>
 
     <!--SABER MAIS com videos e site oficial-->
-    <section class="secao-diva container">
+    <section class="secao-diva__sabermais container">
 
-      <article class="secao-diva__historia">
-        <h3 class="secao-diva__titulo secao-diva__titulo_esq">Conheça mais sobre essa atleta teimosa!</h3>
-
+      <article>
+        <h3 class="secao-diva__titulo">Conheça mais esta mulher livre!</h3>
         <div class="secao-cta">
-          <a class="btn btn_roxo btn_center" href="https://lynnhillclimbing.com/" target="_blank"> Site oficial</a>
+          <a class="btn btn_roxo btn_center" href="https://lynnhillclimbing.com/" target="_blank">Site oficial</a>
         </div>
       </article>
 
       <article class=alinhar-videos>
-
-
         <iframe src="https://www.youtube.com/embed/DyKB_PBOUNc" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/hQXWnoipdFE" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/B0S-g1Vjwb8" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
       </article>
     </section>
 
 
-
-
-
-
+    <!--Aside-->
     <aside class="secao-autora">
       <div class="secao-autora__container">
 
@@ -192,15 +186,17 @@
       </div>
 
       <div class="secao-autora__about closed">
-        <div class="secao-autora__foto">
+        <div class="secao-autora__foto"></div>
           <a href="" target="_blank">
             <img class="img-responsive" src="../juliette-beaudet/img/juperfil.jpeg" alt="JulietteBeaudet" />
           </a>
-        </div>
         <div>
           <p> Sou a Juliette. Empreendedora francesa residente no Brasil, desenvolvedora front-end, também me dedico à
-            música e escalada em rocha. <br>
-            <a href="https://github.com/juliettebeaudet" target="_blank">Conheça mais projetos meus!</a>
+            música e escalada em rocha. Pode entrar em contato comigo no <a href="https://www.linkedin.com/in/juliette-beaudet-a1a3b285/?locale=pt_BR" target="_blank">LinkedIn</a>,
+            <a href="https://www.instagram.com/outdoor_geckos/" target="_blank">Instagram</a> e
+            <a href="https://www.facebook.com/juliette.iracoubo" target="_blank">Facebook</a>,
+            ou conhecer mais projetos meus no
+            <a href="https://github.com/juliettebeaudet" target="_blank">Github</a>.
           </p>
         </div>
       </div>
@@ -228,7 +224,7 @@
       </div>
       <div class="rodape__redes-sociais">
         <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
-          <img src="../../img/fb-icone.png" alt="Icone do facebook Reprograma" />
+          <img class="imglogos" src="img/fb-icone.png" alt="Icone do facebook Reprograma" />
           <span>/br.mdemaravilhosa</span>
         </a>
       </div>
@@ -238,7 +234,8 @@
     </div>
   </footer>
 
-  <script src="../../js/script.js"></script>
-  <script src="js/lynnhill.js""></script>
+
+  <script src="js/lynnhill.js"></script>
+
   </body>
 </html>
