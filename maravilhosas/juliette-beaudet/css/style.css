@@ -431,7 +431,7 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  max-width: 400px;
   border-radius: 5px;
 }
 
@@ -766,7 +766,7 @@ li {
   }
 }
 
-/* GRID */
+/* CELULAR */
 @media (max-width: 768px) {
   .row {
     display: inline-block;
@@ -783,6 +783,22 @@ li {
 .secao-diva__pnariz {
   margin-right: 0rem;
 }
+
+.header-maravilhosas {
+  background-position-x: left;
+}
+
+.secao-autora__about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.closed {
+  display: none;
+  transition: all 1s;
+}
+
 }
 
 /*VIDEOS*/
@@ -796,3 +812,13 @@ li {
     margin: 1em 0;
 }
 }
+
+/*celulares e debaixo: 320 até 400*/
+@media (max-width: 400px){
+
+  .secao-autora__dados p {
+    margin: 7px;
+    font-size: 15px;
+  }
+
+  }
