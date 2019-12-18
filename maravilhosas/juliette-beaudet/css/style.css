@@ -120,7 +120,11 @@ li {
 }
 
 .imglogos {
-  border-radius: 20%;
+  height: 40px;
+}
+
+.imglogomm {
+  border-radius: 30%;
 }
 
 
