@@ -17,6 +17,7 @@ html {
 }
 
 body {
+background-color: #c0acc3;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -131,7 +132,7 @@ li {
     ),
     url(../img/URL-Enedina.jpg);
   background-size: cover;
-  filter: contrast(100%);
+  filter: grayscale(80%) contrast(100%);
   background-position-y: center;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -203,15 +204,15 @@ li {
   text-align: center;
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  color: #674582;
+  color: black;
 }
 
-.secao-diva__titulo_esq {
+.secao-diva__titulo_centro {
   margin-right: auto;
 }
 
 .secao-diva p {
-  color: #63458a;
+  color: black;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -235,7 +236,7 @@ li {
 .secao-diva__citacao p {
   transition: all 0.5s;
   font-weight: bold;
-  border: 1px solid #63458a;
+  border: 1px solid palevioletred;
   text-align: center;
   padding: 1rem;
   font-size: 1.7rem;
@@ -251,6 +252,14 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
+}
+
+.secao-diva__video {
+  width: 100%;
+}
+
+.secao-diva__video iframe{
+    width: 100% !important;
 }
 
 /* --- AUTORA --- */
@@ -277,7 +286,7 @@ li {
   border-bottom: 10px solid transparent;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #63458a;
+  border-top: 10px solid palevioletred;
   transition: all 0.5s;
 }
 
@@ -286,7 +295,7 @@ li {
   transition: all 0.5s;
   width: 0;
   height: 0;
-  border-bottom: 10px solid #63458a;
+  border-bottom: 10px solid palevioletred;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
@@ -351,7 +360,7 @@ li {
 .secao-cta__btn {
   padding: 10px 25px;
   border-radius: 5px;
-  background-color: #674582;
+  background-color: palevioletred;
   color: white;
   font-size: 20px;
 }
@@ -505,3 +514,4 @@ li {
     max-height: 200px;
   }
 }
+
