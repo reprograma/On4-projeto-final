@@ -119,6 +119,10 @@ li {
   text-shadow: 0px 0px 15px black;
 }
 
+.p_destaque {
+  font-weight: bold;
+}
+
 /* HEADER MARAVILHOSA */
 .header-maravilhosa {
   min-height: 70vh;
@@ -174,6 +178,7 @@ li {
   background-color: #63458a;
   border-radius: 10px;
   min-height: 125px;
+
   object-fit: cover;
 }
 
