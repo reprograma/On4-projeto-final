@@ -19,6 +19,8 @@ html {
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color:black;
+
 }
 
 a {
@@ -37,8 +39,14 @@ li {
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
   width: 120%;
-
+  max-width: 100%;
+  height: auto;
 }
+/*.img-responsive-grande {
+  width: auto;
+  margin: auto;
+}*/
+
 
 /* define o tamanho da caixa */
 .container {
@@ -82,6 +90,21 @@ li {
 .btn_center {
   margin: 0 auto;
 }
+p {
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: justify;
+}
+.h2 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
 
 /* --- HEADER--- */
 .header {
@@ -123,11 +146,11 @@ li {
 /* ----- HEADER MARAVILHOSA ----- */
 .header-maravilhosa {
   min-height: 70ph;
-  height: 380px;
+  height: 680px;
   background: linear-gradient(
       to top,
-      rgba(3, 3, 3, 0.781) 0,
-      rgba(196, 61, 223, 0.418) 50%,
+      rgba(8, 0, 8, 0.781) 0,
+      rgba(188, 174, 190, 0.418) 50%,
       black 100%
     ),
     url(../img/hedy-lamarr.jpeg);
@@ -141,9 +164,16 @@ li {
   justify-content: center;
   text-align: center;
   padding: 11rem 2rem 5rem 2rem;
-  color: white;
+  color: whitesmoke;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5.5rem;
+  text-shadow: 2px 2px black;
+
 }
-.header-maravilhosa__titulo{
+
+
+.header-maravilhosa__titulo {
+
   text-transform: uppercase;
   font-size: 2.5rem;
   text-align: center;
@@ -207,7 +237,10 @@ li {
 
 .secao-diva__titulo_esq {
   margin-right: auto;
+
 }
+
+
 
 .secao-diva p {
   color: #63458a;
@@ -229,6 +262,8 @@ li {
   border-radius: 100%;
 
 }
+
+
 .secao-diva__citacao p {
   transition: all 0.5s;
   font-weight: bold;
@@ -243,11 +278,15 @@ li {
   transform: scale(1.1);
 }
 
-.secao-diva__historia {
+.secao-diva__historia .secao-diva__mais-historia{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
+}
+.video {
+  max-width: 100%;
+  height: auto;
 }
 
 /* --- AUTORA --- */
@@ -263,8 +302,9 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  max-width:400px;
   border-radius: 5px;
+
 }
 
 .arrow {
@@ -293,7 +333,10 @@ li {
 .secao-autora__foto a:hover {
   opacity: 0.8;
 }
-
+.secao-autora__foto {
+  width:75%;
+  height: 80%;
+}
 .secao-autora__dados {
   color: #63458a;
 }
@@ -327,8 +370,9 @@ li {
 
 .secao-autora__about p {
   line-height: 23px;
-  font-size: 15px;
-  margin-right: 10px;
+    font-size: 15px;
+    margin-right: 18px;
+    width: 115px;
 }
 
 .closed {
@@ -446,6 +490,12 @@ li {
   .rodape__navegacao > li {
     font-size: 1.5rem;
   }
+  .secao-autora__about p {
+    line-height: 23px;
+      font-size: 15px;
+      margin-right: 18px;
+      width: 115px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -478,6 +528,12 @@ li {
   .secao-autora__dados {
     margin: 0 3rem;
   }
+  .secao-autora__about p {
+    line-height: 23px;
+    font-size: 15px;
+    margin-right: 18px;
+    width: auto;
+}
 }
 
 /* DESKTOP */
@@ -505,4 +561,10 @@ li {
     max-height: 200px;
     min-width: 100px;
   }
+  .secao-autora__about p {
+    line-height: 23px;
+    font-size: 15px;
+    margin-right: 18px;
+    width: auto;
+}
 }
