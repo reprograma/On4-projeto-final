@@ -80,6 +80,7 @@ max-width: % ou px
 
 .navegacao__redes-sociais a {
   margin: 0 1rem;
+
 }
 html {
   font-size: 10px; /* definir uma font-size padrão */
@@ -145,15 +146,18 @@ li {
   transform: translateY(-1rem);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   background-color: rgb(192, 156, 188);
+
 }
 
 .btn_roxo:active {
   transform: translateY(-3rem);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 .btn_center {
   margin: 0 auto;
+
 }
 
 /* --- HEADER --- */
@@ -277,12 +281,7 @@ li {
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
   font-size: 3rem;
   color: #674582;
-
 }
-
-
-
-
 
 .secao-diva p {
   color: #63458a;
@@ -295,6 +294,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+ ;
 }
 
 .secao-diva__foto-perfil {
@@ -313,7 +313,7 @@ width:200px ;
   font-weight: bold;
   border: 3px solid #63458a;
   text-align: center;
-  padding: 100%;
+
   font-size: 3.0rem;
   border-radius: 20px;
   margin-right: 9%;
@@ -334,14 +334,28 @@ width:200px ;
   align-items: center;
   background-color: blueviolet;
 }
-.accordion{
-margin-left: 20%;
-margin-right: 20%;
-color: blueviolet;
-font-size:1.8rem;
-border: 10rem;
+
+.kath_para_os_intimos{
+	padding: 2%;
+  text-align:center;
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #674582;
+}
+.secao-diva__videos{
+  text-align:center;
 }
 
+.texto_video {
+  text-align:justify;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  font-size: 2.0rem;
+  color: #674582;
+  padding: 2%;
+
+}
 
 /* --- AUTORA --- */
 .secao-autora {
@@ -385,6 +399,7 @@ border: 10rem;
 
 .secao-autora__foto a:hover {
   opacity: 0.8;
+  margin-right: 10%;
 }
 
 .secao-autora__dados {
@@ -595,3 +610,10 @@ border: 10rem;
     max-height: 200px;
   }
 }
+/* SMARTPHONES */
+
+@media (min-width: 550px) {
+  .secao-diva__videos{
+
+
+  }}
