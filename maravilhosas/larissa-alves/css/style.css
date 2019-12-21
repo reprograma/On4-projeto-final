@@ -251,6 +251,13 @@ li {
   padding: 5rem 0;
 }
 
+.secao-diva__obras-lista {
+  color: #63458a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-left: 100px;
+}
+
 /* --- AUTORA --- */
 .secao-autora {
   display: flex;
@@ -428,6 +435,16 @@ li {
     margin-top: 1rem;
   }
 
+  .secao-diva__obras {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .secao-diva__obras-lista {
+    margin-left: 277px;
+  }
+
   /* --- FOOTER --- */
   .rodape {
     padding-top: 0;
@@ -468,6 +485,11 @@ li {
     font-size: 2.5rem;
     padding: 4rem;
   }
+
+  .secao-diva__obras-lista {
+    margin-left: 403px;
+  }
+
   .secao-autora__about {
     width: 400px;
     flex-direction: row;
@@ -501,4 +523,9 @@ li {
     max-width: 200px;
     max-height: 200px;
   }
+
+  .secao-diva__obras-lista {
+    margin-left: 600px;
+  }
+
 }
