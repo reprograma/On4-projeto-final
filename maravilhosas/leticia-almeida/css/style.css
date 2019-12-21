@@ -134,7 +134,7 @@ li {
       black 100%
     ),
     url(../img/maxresdefault.jpg);
-  background-size: cover;
+  background-size: contain;
   filter: contrast(100%);
   background-position-y: center;
   background-position-x: center;
