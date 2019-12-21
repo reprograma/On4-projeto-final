@@ -5,3 +5,4 @@ autoraBtn.addEventListener('click', function(e){
   const autoraInfo = document.querySelector('.secao-autora__about')
   autoraInfo.classList.toggle('closed');
 })
+
