@@ -11,14 +11,88 @@ max-width: % ou px
 * {
   box-sizing: border-box;
 }
+/* --- NAV --- */
+.navegacao {
+  background-color: #6745826b;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: all 1s;
+}
 
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens {
+  transition: all 1s;
+  position: absolute;
+  right: -800px;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  transition: right 0.5s;
+}
+
+.navegacao__itens li > a {
+  transition: all 0.5s;
+  color: white;
+}
+
+.navegacao__itens li > a:hover {
+  color: #c083b9;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 5px;
+}
+
+.navegacao__nav {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.navegacao__nav li {
+  font-size: 1.5rem;
+  margin: 1rem;
+
+}
+
+.navegacao__redes-sociais a {
+  margin: 0 1rem;
+}
 html {
   font-size: 10px; /* definir uma font-size padrão */
 }
 
+
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  margin: 0;
+  background-image: linear-gradient(to bottom left, rgba(245, 235, 235, 0.26) 50% ,
+  rgba(213, 146, 233, 0.418)25%,
+  #4840af75);
+  margin:0;
+
 }
 
 a {
@@ -118,6 +192,35 @@ li {
   font-size: 1.8rem;
   text-shadow: 0px 0px 15px black;
 }
+/* --- HEADER MARAVILHOSA --- */
+.header-maravilhosa {
+  min-height: 70vh;
+  height: 480px;
+  background: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      black 100%
+    ),
+    url(../img/capa_foto.jpeg);
+  background-size: cover;
+  filter: contrast(100%);
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+  justify-content: center;
+}
+
+.header-maravilhosa__titulo  {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
 
 /* --- SECTION MARAVILHOSAS --- */
 .maravilhosas__titulo {
@@ -170,20 +273,22 @@ li {
 }
 
 .secao-diva__titulo {
-  text-align: center;
+  text-align:center ;
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #674582;
+
 }
 
-.secao-diva__titulo_esq {
-  margin-right: auto;
-}
+
+
+
 
 .secao-diva p {
   color: #63458a;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .secao-diva__introducao {
@@ -197,25 +302,46 @@ li {
   margin: 1rem;
 }
 
-.secao-diva__citacao p {
-  transition: all 0.5s;
+.secao-diva__foto-perfil img{
+  border-radius: 60%;
+height: 250px;
+width:200px ;
+}
+.secao-diva__citacao p{
+  font-family: 'Courgette', cursive;
+  transition: all 0.1s;
   font-weight: bold;
-  border: 1px solid #63458a;
+  border: 3px solid #63458a;
   text-align: center;
-  padding: 1rem;
-  font-size: 1.7rem;
+  padding: 100%;
+  font-size: 3.0rem;
+  border-radius: 20px;
+  margin-right: 9%;
+  margin-left: 9%;
+
 }
 
 .secao-diva__citacao p:hover {
   transform: scale(1.1);
+  text-shadow: 1px 3px  rgba(0, 0, 0, 0.81);
 }
 
 .secao-diva__historia {
+
   display: flex;
-  flex-direction: column;
+	width: 50%;
+	margin: auto;
   align-items: center;
-  padding: 5rem 0;
+  background-color: blueviolet;
 }
+.accordion{
+margin-left: 20%;
+margin-right: 20%;
+color: blueviolet;
+font-size:1.8rem;
+border: 10rem;
+}
+
 
 /* --- AUTORA --- */
 .secao-autora {
@@ -462,5 +588,10 @@ li {
   }
   .principal {
     max-width: 650px;
+  }
+  .secao-diva__foto-perfil img{
+    min-width: 100px;
+    max-width: 200px;
+    max-height: 200px;
   }
 }
