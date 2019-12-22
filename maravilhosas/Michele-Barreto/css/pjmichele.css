@@ -1,4 +1,4 @@
-/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+
 /* --- GERAL --- */
 /*
 unidades preferidas para esse CSS
@@ -110,7 +110,9 @@ li {
   font-size: 2.5rem;
   font-weight: 900;
   text-shadow: 0px 5px 15px black;
+
 }
+
 
 .principal__sub {
   font-weight: 300;
@@ -125,6 +127,7 @@ li {
   color: #63458a;
   font-size: 2rem;
   text-align: center;
+
 }
 
 .maravilhosas__box {
@@ -144,7 +147,6 @@ li {
   background-color: #63458a;
   border-radius: 10px;
   min-height: 125px;
-  max-height: 220px;
   object-fit: cover;
 }
 
@@ -175,6 +177,7 @@ li {
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: #674582;
+
 }
 
 .secao-diva__titulo_esq {
@@ -197,6 +200,10 @@ li {
   max-width: 18rem;
   margin: 1rem;
 }
+.secao-diva__foto-perfil img{
+  border-radius: 200%;
+
+}
 
 .secao-diva__citacao p {
   transition: all 0.5s;
@@ -205,10 +212,12 @@ li {
   text-align: center;
   padding: 1rem;
   font-size: 1.7rem;
+
 }
 
 .secao-diva__citacao p:hover {
   transform: scale(1.1);
+
 }
 
 .secao-diva__historia {
@@ -377,6 +386,37 @@ li {
     margin: 0;
   }
 
+  /* --- HEADER MARAVILHOSA --- */
+.header-maravilhosa {
+  min-height: 70vh;
+  height: 480px;
+  background: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      black 100%
+    ),
+    url(../img/mariapenha.jpg);
+  background-size: cover;
+  filter: contrast(100%);
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+
+}
+.header-maravilhosa__titulo{
+  text-transform: uppercase ;
+  font-size: 2.5rem;
+  text-align: center;
+
+}
+
 
   /* --- SECTION MARAVILHOSAS --- */
   .maravilhosas {
@@ -415,6 +455,30 @@ li {
   .rodape__navegacao > li {
     font-size: 1.5rem;
   }
+  .arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .arrow-up img {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 15px;
+    top: 12px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    width: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -437,7 +501,7 @@ li {
     padding: 4rem;
   }
   .secao-autora__about {
-    max-width: 400px;
+    width: 400px;
     flex-direction: row;
     text-align: left;
     align-items: center;
@@ -464,5 +528,9 @@ li {
   }
   .principal {
     max-width: 650px;
+  }
+  .secao-diva__foto-perfil img {
+    max-width: 200px;
+    max-height: 200px;
   }
 }
