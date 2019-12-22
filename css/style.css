@@ -144,6 +144,7 @@ li {
   background-color: #63458a;
   border-radius: 10px;
   min-height: 125px;
+  max-height: 220px;
   object-fit: cover;
 }
 
@@ -435,7 +436,7 @@ li {
     padding: 4rem;
   }
   .secao-autora__about {
-    width: 400px;
+    max-width: 400px;
     flex-direction: row;
     text-align: left;
     align-items: center;
