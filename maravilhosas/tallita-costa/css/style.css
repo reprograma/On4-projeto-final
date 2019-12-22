@@ -19,6 +19,7 @@ html {
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 0;
+
 }
 
 a {
@@ -154,7 +155,7 @@ li {
 /* --- SECTION MARAVILHOSAS --- */
 .maravilhosas__titulo {
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-  color: #63458a;
+  color: #5900b3;
   font-size: 2rem;
   text-align: center;
 }
@@ -205,7 +206,7 @@ li {
   text-align: center;
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  color: #674582;
+  color: #330066;
 }
 
 .secao-diva__titulo_esq {
@@ -213,7 +214,7 @@ li {
 }
 
 .secao-diva p {
-  color: #63458a;
+  color: #330066;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -225,7 +226,7 @@ li {
 }
 
 .secao-diva__foto-perfil {
-  max-width: 18rem;
+  max-width: 16rem;
   margin: 1rem;
 
 }
@@ -235,24 +236,30 @@ li {
 
 }
 
+
+
 .secao-diva__citacao p {
   transition: all 0.5s;
   font-weight: bold;
-  border: 1px solid #63458a;
+  border: 1px solid #330066;
   text-align: center;
   padding: 1rem;
   font-size: 1.7rem;
+  background-color: #cca8f0;
 }
 
 .secao-diva__citacao p:hover {
   transform: scale(1.1);
 }
 
+
+
 .secao-diva__historia {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
+  color: #330066;
 }
 
 /* --- AUTORA --- */
@@ -279,7 +286,7 @@ li {
   border-bottom: 10px solid transparent;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #63458a;
+  border-top: 10px solid #330066;
   transition: all 0.5s;
 }
 
@@ -288,7 +295,7 @@ li {
   transition: all 0.5s;
   width: 0;
   height: 0;
-  border-bottom: 10px solid #63458a;
+  border-bottom: 10px solid#330066;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
@@ -300,7 +307,7 @@ li {
 }
 
 .secao-autora__dados {
-  color: #63458a;
+  color: #330066;
 }
 
 .secao-autora__dados p {
@@ -465,6 +472,15 @@ li {
     max-width: 100%;
     margin: 0 4rem;
   }
+  .secao-diva__foto-perfil img {
+    max-width: 19rem;
+    max-height: 19rem;
+    min-width: 16rem;
+  }
+  .secao-diva__foto-perfil img {
+    border-radius: 80%;
+
+  }
   .secao-diva p {
     font-size: 1.7rem;
   }
@@ -502,11 +518,13 @@ li {
     max-width: 650px;
   }
 
-
-
 .secao-diva__foto-perfil img {
-  max-width: 200px;
-  max-height: 200px;
-  min-width: 100px;
+  max-width: 23rem;
+  max-height: 23rem;
+  min-width: 20rem;
+}
+.secao-diva__foto-perfil img {
+  border-radius: 70%;
+
 }
 }
