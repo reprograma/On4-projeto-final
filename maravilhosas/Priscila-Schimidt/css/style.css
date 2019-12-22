@@ -149,10 +149,6 @@ li {
   text-align: center;
 }
 
-
-
-
-
 /* --- SECTION MARAVILHOSAS --- */
 .maravilhosas__titulo {
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
@@ -193,7 +189,7 @@ li {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* --- PEFIL DIVA--- */
+/* --- PERFIL DIVA--- */
 .secao-diva {
   display: flex;
   flex-direction: column;
@@ -212,6 +208,10 @@ li {
 
 .secao-diva__titulo_esq {
   margin-right: auto;
+}
+
+.secao-diva__titulo_center {
+  margin-top: auto;
 }
 
 .secao-diva p {
@@ -233,7 +233,6 @@ li {
 
 .secao-diva__foto-perfil img {
   border-radius: 50%;
-
 }
 
 .secao-diva__citacao p {
@@ -256,6 +255,65 @@ li {
   padding: 5rem 0;
 }
 
+.portfolio {
+  display: flex;
+}
+
+.secao-diva__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 98px;
+}
+
+.content {
+  width: 100%;
+  line-height: 30px;
+  text-align: justify;
+
+}
+.time1 {
+  margin-bottom: 40px;
+}
+
+.time2 {
+  margin-bottom: 40px;
+}
+
+
+
+.secao-diva__foto-time{
+  width: 100%;  /* ... terão sempre 100% de largura */
+  max-width: 100%;  /* ...aqui asseguramos que essa imagem não vai 'esticar' */
+  height: auto; /* ...a altura será sempre proporcional à largura */
+  display: block;
+}
+
+
+.secao-diva__videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.secao-diva__foto-grande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+  width: 70%;
+}
+
+.secao-diva__redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
 /* --- AUTORA --- */
 .secao-autora {
   display: flex;
@@ -269,7 +327,7 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 390px;
   border-radius: 5px;
 }
 
@@ -326,7 +384,7 @@ li {
 }
 .secao-autora__about img {
   border-radius: 8px;
-  width: 75px;
+  width: 105px;
   height: 110px;
   margin: 10px;
 }
