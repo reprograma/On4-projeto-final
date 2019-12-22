@@ -151,3 +151,13 @@ Obs: Se estiver usando uma rede pública de internet, talvez não seja possível
 * eventos jQuery (https://www.w3schools.com/jquery/jquery_ref_events.asp)
 * Lista de Eventos (https://developer.mozilla.org/en-US/docs/Web/Events)
 
+## Parallax
+* https://www.w3schools.com/howto/howto_css_parallax.asp
+* https://1stwebdesigner.com/parallax-scrolling-tutorial/
+
+## Acessibilidade
+* http://www.daltonicos.com.br/daltonico/
+* https://www.w3.org/Translations/WCAG20-pt-br/
+* http://blog.handtalk.me/acessibilidade-na-web/
+* https://www.w3c.br/pub/Materiais/PublicacoesW3C/cartilha-w3cbr-acessibilidade-web-fasciculo-I.html
+

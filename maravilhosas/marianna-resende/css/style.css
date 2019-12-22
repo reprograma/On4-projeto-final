@@ -1,0 +1,625 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* definir uma font-size padrão */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+
+.btn_vermelho {
+  color: rgb(88, 88, 88);
+  background-color: white;
+  display: block;
+  max-width: 180px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.btn_vermelho:hover,
+.btn_vermelho:focus {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.btn_vermelho:active {
+  transform: translateY(-3rem);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn_center {
+  margin: 0 auto;
+}
+
+/* --- BOTAO BACK TO TOP --- */
+
+.back-to-top {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url("../img/img-back-to-top.png") no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  background-position: 0 - 60px;
+}
+
+/* --- HEADER --- */
+.header {
+  min-height: 70vh;
+  height: 480px;
+  background: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.781) 0,
+      #fc9297 50%,
+      black 100%
+    ),
+    url(../img/reprograma3.jpeg);
+  background-size: cover;
+  filter: contrast(100%);
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+}
+
+.principal__titulo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-shadow: 0px 5px 15px black;
+}
+
+.principal__sub {
+  font-weight: 300;
+  margin: 2rem 0 3rem 0;
+  font-size: 1.8rem;
+  text-shadow: 0px 0px 15px black;
+}
+
+/* --- HEADER MARAVILHOSA --- */
+
+.header-maravilhosa {
+  min-height: 70vh;
+  height: 480px;
+  background: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.781) 0,
+      rgba(255, 255, 255, 0.418) 80%,
+      white 100%
+    ),
+    url(../img/lina-background.jpg);
+  background-size: cover;
+  filter: contrast(100%);
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+}
+
+.header-maravilhosa__titulo {
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  text-align: right;
+}
+
+/* --- SECTION MARAVILHOSAS --- */
+.maravilhosas__titulo {
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  color: #b13537;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.maravilhosas__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  color: #b13537;
+}
+
+.maravilhosas__perfil {
+  max-width: 120px;
+  margin: 2rem;
+}
+
+.maravilhosas__perfil img {
+  background-color: #b13537;
+  border-radius: 10px;
+  min-height: 125px;
+  object-fit: cover;
+}
+
+.maravilhosas__perfil a img {
+  transition: all 0.5s;
+}
+
+.maravilhosas__perfil a:hover {
+  text-decoration: underline;
+}
+
+.maravilhosas__perfil a:hover img {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- PEFIL DIVA--- */
+.secao-diva__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: /*"Roboto Slab", Arial,*/ Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #3c3c3b;
+}
+
+.secao-diva__menu li {
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.secao-diva__menu li:hover {
+  transform: scale(1.2);
+  color: #b13537;
+}
+
+.secao-diva__sobre {
+  padding: 1rem 2rem;
+  margin: 10px;
+}
+
+.secao-diva__outros {
+  padding: 1rem 2rem;
+  margin: 10px;
+}
+
+.secao-diva h3 {
+  text-align: center;
+  font-family: /*"Roboto Slab", Arial,*/ Helvetica, sans-serif;
+  font-size: 4rem;
+  color: #b13537;
+}
+
+.secao-diva__foto-perfil {
+  align-items: center;
+}
+
+/* frase com efeito */
+.fadeIn {
+  animation: fadeIn 4s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.secao-diva p {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  color: #3c3c3b;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.secao-diva__outros p {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  color: #3c3c3b;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.secao-diva__citacao p {
+  text-align: center;
+  transition: all 0.5s;
+  font-weight: bold;
+  border: 0.5px solid #3c3c3b;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.secao-diva__citacao p:hover {
+  transform: scale(1.1);
+  border: 0.5px solid #b13537;
+  color:  #b13537;
+}
+
+.secao-diva__sobre_esq {
+  margin-right: auto;
+}
+
+/* --- AUTORA --- */
+.secao-autora {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.secao-autora__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #b13537;
+  transition: all 0.5s;
+}
+
+.arrow-close {
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #b13537;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  margin-bottom: 25px;
+}
+
+.secao-autora__foto a:hover {
+  opacity: 0.8;
+}
+
+.secao-autora__dados {
+  color: #b13537;
+}
+
+.secao-autora__dados p {
+  margin: 15px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.secao-autora__dados span {
+  font-size: 28px;
+}
+
+.secao-autora a {
+  font-style: italic;
+  text-decoration: underline;
+}
+.secao-autora__about {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.secao-autora__about img {
+  border-radius: 8px;
+  width: 75px;
+  height: 110px;
+  margin: 10px;
+}
+
+.secao-autora__about p {
+  line-height: 23px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.closed {
+  display: none;
+  transition: all 1s;
+}
+.opened {
+  display: flex;
+  transition: all 1s;
+}
+
+.secao-cta {
+  text-align: right;
+  padding: 4rem 4rem;
+}
+
+.secao-cta__btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #b13537;
+  color: white;
+  font-size: 20px;
+}
+
+.secao-cta__btn:hover {
+  opacity: 0.8;
+}
+
+/*** MEDIA QUERIES ***/
+/* TABLET */
+@media (min-width: 768px) {
+  /* --- NAV --- */
+  .navegacao__itens {
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
+  }
+
+  .navegacao__nav {
+    margin-bottom: 0;
+  }
+
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navegacao__itens li {
+    font-size: 1.2rem;
+    margin: 0 0.6rem;
+  }
+
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+
+  /* --- HEADER --- */
+  .header {
+    min-height: 75vh;
+    background-size: cover;
+    background-position-y: 0;
+    text-align: left;
+    padding: 5rem 10rem;
+  }
+
+  .principal__titulo {
+    font-size: 2.9rem;
+  }
+
+  .principal__sub {
+    font-size: 1.8rem;
+  }
+
+  .principal__btn {
+    margin: 0;
+  }
+
+  /* --- SECTION MARAVILHOSAS --- */
+  .maravilhosas {
+    padding: 4rem 0;
+  }
+
+  .maravilhosas__box > div {
+    max-width: 200px;
+    margin: 5rem;
+  }
+
+  .maravilhosas__perfil img {
+    min-height: 220px;
+  }
+  .maravilhosas__perfil p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .secao-diva__menu li {
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  /* --- FOOTER --- */
+  .rodape {
+    padding-top: 0;
+  }
+
+  .rodape__principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .rodape__logo img {
+    max-width: 250px;
+  }
+
+  .rodape__navegacao > li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .principal {
+    max-width: 650px;
+  }
+  .secao-diva__introducao {
+    flex-direction: row;
+    margin: 3rem 0;
+  }
+  .header-maravilhosa__titulo {
+    font-size: 2rem;
+  }
+  .secao-diva__foto-perfil {
+    float: left;
+    max-width: 30%;
+    margin-right: 4rem;
+  }
+
+  .secao-diva p {
+    font-size: 1.7rem;
+  }
+  .secao-diva__citacao p {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 4rem;
+    margin: 10rem;
+  }
+  .secao-diva h3 {
+    text-align: right;
+    display: block;
+    margin: 10px;
+    font-family: /*"Roboto Slab", Arial,*/ Helvetica, sans-serif;
+    font-size: 6rem;
+    color: #b13537;
+  }
+
+  .secao-diva__fotos {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 60%;
+    margin: auto;
+  }
+
+    .secao-autora__about {
+    width: 400px;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .secao-autora__dados {
+    margin: 0 3rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+  .navegacao__box {
+    max-width: 80%;
+  }
+  .header {
+    min-height: 90vh;
+    background-position-y: 25%;
+  }
+  .navegacao__itens li {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+  .principal {
+    max-width: 650px;
+  }
+  .header-maravilhosa__titulo {
+    font-size: 2.5rem;
+  }
+  .secao-diva__menu {
+    font-size: 2.5rem;
+  }
+
+  .secao-diva__menu li {
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .secao-diva__foto-perfil {
+    float: left;
+    max-width: 45%;
+    margin-right: 4rem;
+  }
+  .secao-diva h3 {
+    text-align: right;
+    display: block;
+    margin: 15px;
+    font-family: /*"Roboto Slab", Arial,*/ Helvetica, sans-serif;
+    font-size: 6rem;
+    color: #b13537;
+  }
+  .secao-diva p {
+    font-size: 1.9rem;
+  }
+  .secao-diva__citacao p {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 4rem;
+    margin: 10rem;
+  }
+  .secao-diva__fotos {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+  }
+}
