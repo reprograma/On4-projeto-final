@@ -227,12 +227,12 @@ li {
 
 /** ---- PERSONALIDADE ---- **/
 /* --- HEADER --- */
- .header-marie {
+ .hipatia {
     background-image:
       linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
       rgba(196, 61, 223, 0.3) 50%,
       #69156975 100%),
-      url(./img/01.jpg);
+      url(./hipatia-header.jpg);
     background-position: center;
     display: flex;
     background-size: cover;
@@ -245,112 +245,114 @@ li {
     height: 500px;
 }
 
-.header-marie__titulo {
+.hipatia {
     text-align: center;
     font-size: 2.6rem;
     text-transform: uppercase;
 }
 
 /* --- PEFIL DIVA--- */
-.minha-diva__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 2rem;
+.hipatia-intro {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
     margin: 0 auto;
 }
 
-.minha-diva__titulo {
+.hipatia-conteudo {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.hipatia-intro-title {
     text-align: center;
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-size: 2rem;
     color: #674582;
 }
-.minha-diva__titulo:hover {
-    transform: scale(2.1);
-}    
-.minha-diva__titulo_esq {
-    margin-right: auto;
+
+.hipatia-bio-summary p {
+    color: #bd49b3;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 2.5rem
 }
 
-.minha-diva__container p {
+.hipatia-bio-1 {
+    color: #bd49b3;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.hipatia-bio-1-content p {
     color: #63458a;
     font-size: 1.6rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
-.minha-diva__introducao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hipatia-bio-2 {
+    color: #bd49b3;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
 }
 
-.minha-diva__conteudo{
-    align-items: center;
-}
-.minha-diva__icons{
-    text-align: center;
-}
-.diva__img:hover {
-    transform: rotateY(180deg);
-  }
-
-.minha-diva__citacao p {
-    transition: all .5s;
-    font-weight: bold;
-    border: 1px solid #82d7ff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.7rem;
-}
-
-.minha-diva__citacao p:hover {
-    transform: scale(1.1);
-    
-}
-
-.minha-diva__citacao2 p {
-    transition: all .5s;
-    font-weight: bold;
-    border: 1px solid #82d7ff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.7rem;
-}
-
-.minha-diva__citacao2 p:hover {
-    transform: scale(1.1);
-}
-
-.minha-diva__historia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem 0;
-}
-.referencia{
-    text-align: center;
-}
-.referencia__dados{
-    margin: 15px;
-    display: inline-block;
-    font-size: 28px;
-}
-
-.referencia__about{
-    text-align: center;
-}
-.referencia__item{
-    color: #e782fc;
+.hipatia-bio-2-content p {
+    color: #63458a;
     font-size: 1.6rem;
     line-height: 1.5;
-        
+    text-align: justify;
 }
 
-.referencia__item:hover{
-    color: #82d7ff;
+.hipatia-bio-3 {
+    color: #bd49b3;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
 }
+
+.hipatia-bio-3-content p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.hipatia-bio-4 {
+    color: #bd49b3;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.hipatia-bio-4-content p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.cita-livro {
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.referencias {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.fonte {
+    color: #bd49b3;
+    font-size: 2rem;
+    text-align: justify;
+    text-decoration: underline;
+}
+
 
 /* --- AUTORA --- */
 .secao-eu-autora {
@@ -371,8 +373,8 @@ li {
 
 .arrow {
     cursor: pointer;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -383,8 +385,8 @@ li {
 .arrow-close {
     cursor: pointer;
     transition: all .5s;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-bottom: 10px solid #63458a;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -394,8 +396,8 @@ li {
 
 .referencia__btn {
     cursor: pointer;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -406,8 +408,8 @@ li {
 .referencia__btn-close {
     cursor: pointer;
     transition: all .5s;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-bottom: 10px solid #63458a;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -417,9 +419,7 @@ li {
 
 .secao-autora__foto a:hover {
     opacity: 0.8;
-    
 }
-
 
 .secao-eu-autora__dados {
     color: #63458a;
@@ -439,13 +439,15 @@ li {
     font-style: italic;
     text-decoration: underline;
 }
+
 .secao-autora__about {
     background-color: rgb(248, 205, 248);
     border-radius: 5px;
     display:flex;
     flex-direction: row;
 }
-.secao-autora__about img{
+
+.secao-autora__about img {
     border-radius: 8px;
     width: 75px;
     max-height: 110px;
@@ -458,11 +460,12 @@ li {
     margin-right: 10px;
 }
 
-.closed{
+.closed {
     display:none;
     transition: all 1s;
 }
-.opened{
+
+.opened {
     display: flex;
     transition: all 1s;
 }
@@ -480,18 +483,17 @@ li {
     font-size: 20px;
 }
 
-.secao-cta__btn:hover{
+.secao-cta__btn:hover {
     opacity: 0.8;
 }
 
-.diva__lista{
+.diva__lista {
     color: #e782fc;
     font-size: 1.6rem;
     line-height: 1.5;
-
 }
-.diva__lista:hover{
 
+.diva__lista:hover {
     color: #82d7ff;
 }
 
