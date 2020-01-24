@@ -303,9 +303,9 @@ li {
 }
 
 .secao-diva__foto-perfil img{
-  border-radius: 60%;
+  border-radius: 10%;
 height: 250px;
-width:200px ;
+width:150px ;
 }
 .secao-diva__citacao p{
   font-family: 'Courgette', cursive;
@@ -566,7 +566,7 @@ width:200px ;
   }
   .secao-diva__foto-perfil {
     max-width: 100%;
-    margin: 0 4rem;
+    margin: 0 3rem;
   }
   .secao-diva p {
     font-size: 1.7rem;
